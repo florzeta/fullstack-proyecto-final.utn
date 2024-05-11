@@ -1,0 +1,50 @@
+section {
+    margin: 20px;
+    padding: 10px;
+}
+
+.novedades-holder {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.novedades-holder .publicacion-item:first-child {
+    width: 100%;
+    height: auto;
+}
+
+.fecha {
+    font-weight: bold;
+    color: #888;
+}
+
+.volver-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    background-color: transparent;
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #abafcf; 
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.button:hover {
+    color: #333; 
+    border-color: #555;
+    transition: color 0.3s ease;
+}
+

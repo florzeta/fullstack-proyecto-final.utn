@@ -1,0 +1,53 @@
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.datos p,
+.formulario p {
+    margin-bottom: 10px;
+}
+
+.datos p,
+.formulario p,
+.datos ul,
+.formulario ul {
+    font-size: 14px;
+}
+
+.datos ul,
+.formulario ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    background: #f2f2f2;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.formulario textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.formulario input[type="submit"] {
+    background: #6da9ed;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #2e64a1;
+}

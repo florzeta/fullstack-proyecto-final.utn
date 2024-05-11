@@ -1,0 +1,34 @@
+<div class="container" style="margin:100px 0">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>Modificar la publicacion: {{publicacion.id_publicacion}}</h4>
+            <form action="/admin/publicaciones/modificar" method="post" enctype="multipart/form-data">
+                <input type="hidden" value="{{publicacion.id_publicacion}}" name="id">
+                <div class="mb-3 row">
+                    <input type="text" placeholder="Titulo" class="form-control" class="form-control" name="titulo"
+                        value="{{publicacion.titulo}}">
+                </div>
+                <div class="mb-3 row">
+                    <input type="text" placeholder="Subtitulo" class="form-control" name="subtitulo" value="{{publicacion.subtitulo}}">
+                </div>
+                <div class="mb-3 row">
+                    <p>
+                        <label>Imagen: <input type="file" class="form-control" name="imagen" id="imagen" /></label>
+                    </p>
+                    <p>
+                        <label><input type="checkbox" name="img_delete" id="img_delete" value="1">Eliminar imagen
+                            actual?</label>
+                        <input type="hidden" name="img_original" value="{{publicacion.img_id}}">
+                    </p>
+                </div>
+                <div class="mb-3 row">
+                    <textarea name="cuerpo" placeholder="cuerpo" class="form-control">{{publicacion.cuerpo}}</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Modificar</button>
+            </form>
+            {{#if error}}
+            <h5>{{message}}</h5>
+            {{/if}}
+        </div>
+    </div>
+</div>

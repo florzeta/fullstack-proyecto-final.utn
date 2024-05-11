@@ -1,0 +1,47 @@
+.publicaciones p{
+    font-size: 12px;
+    margin: 20px 5px;    
+}
+
+.publicaciones {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.publicaciones h1 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.publicaciones h2 {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.publicaciones img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.publicaciones div {
+    font-size: 16px;
+    color: #555555;
+}
+
+.publicaciones div p {
+    margin-bottom: 10px;
+}
+
+.publicaciones hr {
+    border: none;
+    border-top: 1px solid #dddddd;
+    margin: 20px 0;
+}
